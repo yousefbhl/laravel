@@ -6,9 +6,7 @@ use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
-|--------------------------------------------------------------------------
-| Routes — Mini Réseau Social
-|--------------------------------------------------------------------------
+mini app
 */
 
 // ── Routes publiques (non authentifiées) ──────────────────────────────────

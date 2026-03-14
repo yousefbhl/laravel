@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    // ── Afficher formulaire de connexion ──────────────────────────
+    // ── Afficher formulaire de connexion 
     public function showLogin()
     {
         if (session('user_id')) {
@@ -17,7 +17,7 @@ class AuthController extends Controller
         return view('auth.login');
     }
 
-    // ── Traiter la connexion ──────────────────────────────────────
+    // ── Traiter la connexion 
     public function login(Request $request)
     {
         $request->validate([
