@@ -45,7 +45,7 @@ class AuthController extends Controller
             ->with('success', "Bienvenue, {$user->name} !");
     }
 
-    // ── Afficher formulaire d'inscription ─────────────────────────
+    // ── Afficher formulaire d'inscription
     public function showRegister()
     {
         if (session('user_id')) {
@@ -54,7 +54,7 @@ class AuthController extends Controller
         return view('auth.register');
     }
 
-    // ── Traiter l'inscription ─────────────────────────────────────
+    // ── Traiter l'inscription 
     public function register(Request $request)
     {
         $request->validate([
@@ -84,7 +84,7 @@ class AuthController extends Controller
             ->with('success', "Compte créé ! Bienvenue, {$user->name} !");
     }
 
-    // ── Déconnexion ───────────────────────────────────────────────
+    // ── Déconnexion 
     public function logout(Request $request)
     {
         session()->forget('user_id');
